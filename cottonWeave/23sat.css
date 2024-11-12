@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    overflow: hidden;
+    font-family: ui-sans-serif, system-ui, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0px 7vw;
+    padding-top: 170px;
+    gap: 70px;
+}
+
+#left{
+    height: 100%;
+    width: 47%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 2.5vw;
+}
+
+#left h1{
+    font-size: 8.3vw;
+    font-weight:500;
+    line-height: 7vw;
+}
+
+#bottom-left{
+    width: 100%;
+}
+
+#bottom-left #colors{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 14px;   
+    -webkit-box-align: center;   
+        -ms-flex-align: center;   
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+#colors h3{
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#color1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(19, 255, 31);
+    margin: 5px;
+}
+
+#color2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+
+#left h2{
+    margin-top: 50px;
+    font-size: 2vw;
+    margin-bottom: 15px;
+
+}
+
+#left h2 span{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 25px;
+    font-weight:600;
+}
+
+#left h2 span:hover{
+    font-size: 30px;
+}
+
+#left p{
+    width: 70%;
+    font-size: 1.1vw;
+    color: #444;
+    line-height: 1.6vw;
+} 
+
+#right {
+    height: 90%;
+    width: 33%;
+    position: relative;
+}
+
+#right-top{
+    height: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+}
+
+#right-top h4{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+#right-top h4 i{
+    font-size: 20px;
+    color: burlywood;
+}
+
+#right img{
+    width: 100%;
+    height: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 1%;
+       object-position: 0 1%;
+}
+
+#blackcircle{
+    position: absolute;
+    background-color: #1f1d1d;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 20%;
+    right: -14%;
+
+}
+
+#blackcircle{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#rotated{
+    position: absolute;
+    left: -10%;
+    bottom: 3%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    #main{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0px 40px;
+        padding-top: 40px;
+        gap: 70px;
+    }
+
+    #left{
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding-bottom: 2.5vw;
+    }
+    
+    #left h1{
+        font-size: 19vw;
+        line-height: 16vw;
+    }
+    
+    #bottom-left #colors{
+        padding: 2px 7px;  
+        margin-top: 15px; 
+    }
+    
+    #colors h3{
+        margin-right: 5px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    #color1{
+        height: 12px;
+        width: 12px;
+        margin: 4px;
+    }
+    
+    #color2{
+        height: 12px;
+        width: 12px;
+    }
+    
+    #left h2{
+        margin-top: 20px;
+        font-size: 5vw;
+        margin-bottom: 10px;
+    
+    }
+    
+    #left h2 span{
+        font-size: 20px;
+    }
+    
+    #left p{
+        width: 100%;
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+
+    #right {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #right-top{
+        height: 70px;
+        width: 100%;
+    
+    }
+    
+    #right-top h4{
+        font-size: 15px;
+    }
+    
+    #right-top h4 i{
+        font-size: 15px;
+        color: burlywood;
+    }
+    
+    #blackcircle{
+        position: absolute;
+        background-color: #1f1d1d;
+        width: 70px;
+        height: 70px; 
+    }
+    
+    #blackcircle{
+        font-size: 11px;
+        font-weight: lighter;
+    }
+    
+    #rotated{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
