@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Noto Sans Khojki", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+
+#nav span{
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 12px;
+}
+
+#nav h4{
+    font-size: 18px;
+    
+}
+
+#center{
+    width: 100%;
+    padding: 25px 90px;
+}
+
+h1{
+    font-size: 4.5vw;
+    font-weight: 600;
+    line-height:5.5vw;
+}
+
+#center-in{
+    height: 200px;
+    width: 100%;
+    margin-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#center-in p{
+    font-size: 0.8vw;
+    font-weight: 600;
+    line-height: 1.3vw;
+}
+
+#right{
+    width: 20%;
+}
+
+.elem{
+    padding: 0.7vw 0;
+    border-top: 2px solid #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.elem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8vw;
+}
+
+.elem span{
+    font-size: 1.2vw;
+    opacity: 0;
+}
+
+.elem .material-symbols-outlined.add-to-cart-icon {
+    opacity: 1;
+}
+
+.elem:hover span{
+    opacity: 1;
+}
+
+.elem:hover a{
+    text-decoration: underline;
+}
+
+#bottom{
+    height: 33.1%;
+    width: 100%;
+    background-image: url('https://media.istockphoto.com/id/1366050840/photo/authentic-portrait-of-laughing-blonde-woman-on-gray-background-with-shadow-from-the-sun-in.jpg?s=612x612&w=0&k=20&c=Mi2lgU_XmOk_8Ayw8AXEdPN6NbVNYfF4lHjmKNFTZdY=');
+    background-size: cover;
+    background-position: 0 35%;
+}
+
+@media (max-width: 600px) {
+    #nav{
+        height: 50px;
+        gap: 4vw;
+        padding: 0 4vw;
+    }
+
+    #nav span{
+        font-size: 18px;
+        padding: 7px;
+    }
+    
+    #nav h4{
+        font-size: 15px;
+        
+    }
+
+    #center{
+        padding: 25px 20px;
+    }
+    
+    h1{
+        font-size: 10vw;
+        line-height:11vw;
+    }
+    
+    #center-in{
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+    #center-in p{
+        font-size: 3.5vw;
+        font-weight: 500;
+        line-height: 4.5vw;
+    }
+
+    #right{
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .elem{
+        padding: 1.2vw 0;
+        border-top: 1.5px solid #887979;
+
+    }
+    
+    .elem a{
+        font-size: 3.5vw;
+    }
+    
+    .elem span{
+        font-size: 4vw;
+    }
+
+    #bottom{
+        margin-top: 60px;
+        height: 34%;
+    }
+    
+}
