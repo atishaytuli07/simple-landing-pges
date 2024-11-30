@@ -1,0 +1,356 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+    position: relative;
+    z-index: 9999;
+}
+nav h3, i{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#left img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+#left>h1{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: #fff;
+    z-index: 9999;
+    font-size: 120px;
+    text-align: right;
+    line-height: 105px;
+}
+
+#right{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+#right #img1{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    object-fit: cover;
+}
+
+#right #img2{
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    transform: translate(0, -50%);
+    left: 10%;
+    top: 50%;
+    object-fit: cover;
+}
+
+#right #img3{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 2%;
+    object-fit: cover;
+}
+
+#right>h1{
+    position: absolute;
+    rotate: -90deg;
+    right: -15%;
+    top: 24%;
+    color: #000;
+    z-index: 9999;
+    font-size: 50px;
+}
+
+#right a{
+    color: #000;
+    text-decoration: none;
+}
+
+#right ul{
+    list-style: none;
+    position: absolute;
+    right: 0%;
+}
+
+#right li{
+    display: inline;
+    margin-right: 10px;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui,'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+    position: relative;
+    z-index: 9999;
+}
+nav h3, i{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    animation-name: abc;
+    animation-duration: 4s;
+}
+
+#left img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 99;
+    animation-delay: 0.5s;
+    animation-name: imgg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#left>h1{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: #fff;
+    z-index: 9999;
+    font-size: 120px;
+    text-align: right;
+    line-height: 105px;
+    animation-name: move;
+    animation-duration: 4s;
+}
+
+#right{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+#right #img1{
+    position: absolute;
+    top:2%;
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%, 0);
+    left: 30%;
+    object-fit: cover;
+    animation-name: move;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+#right #img2{
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    transform: translate(0, -50%);
+    left: 10%;
+    top: 30%;
+    object-fit: cover;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    
+}
+
+#right #img3{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    transform: translate(-50%, 0);
+    left: 40%;
+    bottom: 9%;
+    object-fit: cover;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#right>h2{
+    position: absolute;
+    left: 12.5%;
+    top: 1.5%;
+    color: #000;
+    z-index: 9999;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+#right>p{
+    width: 200px;
+    position: absolute;
+    left: 13%;
+    top: 7%;
+    text-align: justify;
+    color: #000;
+    z-index: 9999;
+    font-size: 16px;
+}
+
+#right a{
+    color: #000;
+    text-decoration: none;
+}
+
+#right ul{
+    list-style: none;
+    position: fixed;
+    right: -9%;
+    bottom: 22%;
+    transform: rotate(-90deg);
+
+}
+
+
+#right li{
+    margin-left: 40px;
+    display: inline;
+    font-size: 22px;
+}
+
+#right>h1{
+    position: absolute;
+    rotate: -90deg;
+    right: -15%;
+    top: 24%;
+    color: #000;
+    z-index: 9999;
+    font-size: 50px;
+    animation-name: xyz;
+    animation-duration: 5s;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #a88061;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+     }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imgg{
+    0%{
+        opacity: 0;
+        transform: rotate(20deg) scale(1.4);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes abc{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes xyz{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
